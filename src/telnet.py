@@ -1,5 +1,4 @@
 from telnetlib import Telnet
-from time import sleep
 
 try:
     tn = Telnet('127.0.0.1', port=25, timeout=5)
