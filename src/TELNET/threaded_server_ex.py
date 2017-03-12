@@ -22,7 +22,7 @@ class ThreadedServer(object):
             try:
                 data = client.recv(size)
                 if data:
-                    # Set the response to echo back the recieved data 
+                    # Set the response to echo back the recieved data
                     response = data
                     client.send(response)
                 else:
@@ -33,4 +33,4 @@ class ThreadedServer(object):
 
 if __name__ == "__main__":
     port_num = input("Port? ")
-    ThreadedServer('',port_num).listen()
+    ThreadedServer('', port_num).listen()
